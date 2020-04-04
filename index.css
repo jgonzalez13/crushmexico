@@ -19,7 +19,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-
+  background-color: black;
   overflow-y: hidden;
   overflow-x: hidden;
 }

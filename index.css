@@ -8,6 +8,7 @@ body {
   height: 100%;
 }
 
-#quedateEnCasa {
+#quedateEnCasa,
+#oyePapi {
   display: none;
 }

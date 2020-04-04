@@ -20,6 +20,7 @@ body {
   flex-direction: column;
   justify-content: center;
 
+  overflow-y: hidden;
   overflow-x: hidden;
 }
 
@@ -106,7 +107,7 @@ h1 {
     font-size: 1.5em;
     margin-top: 1em;
   }
-  .cabezaImg {
+  .cabezaSpin2 {
     width: auto;
     height: 40%;
     position: absolute;

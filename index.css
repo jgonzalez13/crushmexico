@@ -59,7 +59,8 @@ body {
   animation: spin2 2s linear infinite;
 }
 
-#quedateEnCasa {
+#quedateEnCasa,
+#oyePapi {
   display: none;
 }
 

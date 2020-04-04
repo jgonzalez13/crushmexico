@@ -1,8 +1,11 @@
 html {
   margin: 0;
   padding: 0;
-  width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
+  min-width: 100vw;
+  max-width: 100vw;
+  width: auto;
+  height: auto;
 }
 
 body {
@@ -12,10 +15,10 @@ body {
   height: 100%;
   box-sizing: border-box;
   display: grid;
-  grid-template-rows: 12em auto;
-  background-image: url('./media/hugo.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
+  grid-template-rows: 12em minmax(300px, calc(100vh - 192px));
+}
+.canvasContainer {
+  position: absolute;
 }
 
 .headerContainer {
@@ -23,17 +26,60 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 10;
 }
+.headerContainer p {
+  padding: 0;
+  margin: 0;
+}
+
 .hash {
   font-size: 6em;
   font-weight: bolder;
   color: white;
-  background-color: rgba(0, 0, 0, 0.8);
+  /* background-color: rgba(0, 0, 0, 0.8); */
 }
 
 .cabezaContainer {
+  height: 100%;
+  width: 100%;
   grid: 2/3;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0;
+  overflow: hidden;
+  /* background: hsla(0, 0%, 0%, 1); */
+}
+
+.cabezaImg {
+  width: 33%;
+  height: auto;
+  position: absolute;
+  animation: spin2 2s linear infinite;
+}
+
+#quedateEnCasa {
+  display: none;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin2 {
+  0%,
+  50%,
+  100% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(35deg);
+  }
+
+  75% {
+    transform: rotate(-35deg);
+  }
 }

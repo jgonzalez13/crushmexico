@@ -7,15 +7,26 @@
     <title>Document</title>
   </head>
   <body>
+    <canvas class="canvasContainer" id="canv"> </canvas>
     <div class="headerContainer">
       <p class="hash">
         #QuédateEnCasa
       </p>
     </div>
-    <main class="cabezaContainer">
-      <img class="cabezaImg" src="" alt="nani" />
-    </main>
+    <audio id="quedateEnCasa" controls>
+      <source type="audio/mpeg" src="./media/quedateEnCasa.mpeg" />
+    </audio>
 
-    <script src="./index.js"></script>
+    <div class="cabezaContainer">
+      <img
+        id="gatell"
+        class="cabezaImg"
+        src="./media/lopezgatell-removebg-preview.png"
+        alt="nani"
+      />
+    </div>
+
+    <script defer src="./index.js"></script>
+    <script src="./canva.js"></script>
   </body>
 </html>

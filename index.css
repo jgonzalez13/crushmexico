@@ -19,6 +19,12 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+  overflow-x: hidden;
+}
+
+h1 {
+  margin: 0;
 }
 
 .canvasContainer {
@@ -82,5 +88,21 @@ body {
 
   75% {
     transform: rotate(-35deg);
+  }
+}
+
+@media only screen and (max-width: 798px) {
+  .headerContainer {
+    width: auto;
+  }
+  .hash {
+    font-size: 1.5em;
+    margin-top: 1em;
+  }
+  .cabezaImg {
+    width: auto;
+    height: 40%;
+    position: absolute;
+    animation: spin2 2s linear infinite;
   }
 }

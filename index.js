@@ -1,5 +1,10 @@
 const gatell = document.getElementById("gatell");
 
+window.onload = function () {
+  if (getRandomInt(1, 2) === 1) gatell.className = "cabezaSpin";
+  else gatell.className = "cabezaSpin2";
+};
+
 function getRandomInt(min, max) {
   min = Math.ceil(min);
   max = Math.floor(max);

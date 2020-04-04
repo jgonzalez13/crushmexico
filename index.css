@@ -58,7 +58,14 @@ h1 {
   overflow: hidden;
 }
 
-.cabezaImg {
+.cabezaSpin {
+  width: 33%;
+  height: auto;
+  position: absolute;
+  animation: spin 2s linear infinite;
+}
+
+.cabezaSpin2 {
   width: 33%;
   height: auto;
   position: absolute;
